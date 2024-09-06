@@ -280,3 +280,50 @@
 // for (let index = 0; index <= users.length; index++) {
 //     console.log(`My full name is ${users[index].firstName} ${users[index].lastName}`)   
 // }
+
+// nested loop ---------------------------------------------------------------
+
+// const seatingChart = [
+//     ["Colas", "Benoit", "Elodie"],
+//     ["Sola", "Irina", "Antonino", "Eli"],
+//     ["John", "Maryna", "Naike", "Fabrice"],
+//   ];
+  
+//   // I can use nested loops to do that :
+  
+//   for (let i = 0; i < seatingChart.length; i++) {
+//     const row = seatingChart[i]; // I created a variable "row" just to be cleaner in the declaration of the next loop. You could put seatingChart[i].length, it would be the same thing
+//         console.log("Row #"+[i+1])
+//     for (let j = 0; j < row.length; j++) {
+//       console.log(row[j]);
+//     }
+//   }
+
+// Exercice de boucle de javascript----------------------------------------------------------------------
+
+let maxNumber;
+let guessNumber;
+let randomNumber;
+let tentative = 0
+
+do {
+    maxNumber =parseInt(prompt("Veuillez entrer un nombre max :"));  
+} while (isNaN(maxNumber) || maxNumber <= 0);  
+
+randomNumber = Math.floor(Math.random()* maxNumber) + 1;
+
+do {
+    guessNumber = parseInt(prompt("Devinez le nombre entre 1 et " + maxNumber + " :"))
+    tentative = tentative + 1;
+
+    if (isNaN(guessNumber)) {
+        alert("Ce n'est pas un nombre valide. Veuillez entrer un nombre.");
+    } else if (guessNumber < randomNumber) {
+        alert("Trop bas !");
+    } else if (guessNumber > randomNumber) {
+        alert("Trop haut !");
+    }
+} while (guessNumber !== randomNumber);
+
+alert("Félicitations ! Vous avez trouvé le nombre " + randomNumber + " en " + tentative + " tentatives.");
+
