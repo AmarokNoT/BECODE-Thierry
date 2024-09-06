@@ -301,29 +301,33 @@
 
 // Exercice de boucle de javascript----------------------------------------------------------------------
 
-let maxNumber;
-let guessNumber;
-let randomNumber;
-let tentative = 0
+// let maxNumber;
+// let guessNumber;
+// let randomNumber;
+// let tentative = 0
 
-do {
-    maxNumber =parseInt(prompt("Veuillez entrer un nombre max :"));  
-} while (isNaN(maxNumber) || maxNumber <= 0);  
+// do {
+//     maxNumber =parseInt(prompt("Veuillez entrer un nombre max :"));  
+// } while (isNaN(maxNumber) || maxNumber <= 0);  
 
-randomNumber = Math.floor(Math.random()* maxNumber) + 1;
+// randomNumber = Math.floor(Math.random()* maxNumber) + 1;
 
-do {
-    guessNumber = parseInt(prompt("Devinez le nombre entre 1 et " + maxNumber + " :"))
-    tentative = tentative + 1;
+// do {
+//     guessNumber = parseInt(prompt("Devinez le nombre entre 1 et " + maxNumber + " :"))
+//     tentative = tentative + 1;
 
-    if (isNaN(guessNumber)) {
-        alert("Ce n'est pas un nombre valide. Veuillez entrer un nombre.");
-    } else if (guessNumber < randomNumber) {
-        alert("Trop bas !");
-    } else if (guessNumber > randomNumber) {
-        alert("Trop haut !");
-    }
-} while (guessNumber !== randomNumber);
+//     if (isNaN(guessNumber)) {
+//         alert("Ce n'est pas un nombre valide. Veuillez entrer un nombre.");
+//     } else if (guessNumber < randomNumber) {
+//         alert("Trop bas !");
+//     } else if (guessNumber > randomNumber) {
+//         alert("Trop haut !");
+//     }
+// } while (guessNumber !== randomNumber);
 
-alert("Félicitations ! Vous avez trouvé le nombre " + randomNumber + " en " + tentative + " tentatives.");
+// alert("Félicitations ! Vous avez trouvé le nombre " + randomNumber + " en " + tentative + " tentatives.");
+
+// Exercice forOF / forIn -------------------------------------------------------------------------------------------
+
+
 
