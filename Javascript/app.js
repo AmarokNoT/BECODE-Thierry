@@ -1,40 +1,40 @@
-var a = "3";
-var b = "8";
+// var a = "3";
+// var b = "8";
 
-/***********Do not change the code above 👆*******/
-//Write your code here :
-var a = b;
-var b = a;
-/***********Do not change the code below 👇*******/
+// /***********Do not change the code above 👆*******/
+// //Write your code here :
+// var a = b;
+// var b = a;
+// /***********Do not change the code below 👇*******/
 
-console.log("a is " + a);
-console.log("b is " + b); 
+// console.log("a is " + a);
+// console.log("b is " + b); 
 
-// DON'T TOUCH THIS LINE!
-const message = "    TASTE THE RAINBOW!  "; //DON'T CHANGE THIS LINE PLEASE!
+// // DON'T TOUCH THIS LINE!
+// const message = "    TASTE THE RAINBOW!  "; //DON'T CHANGE THIS LINE PLEASE!
 
-// YOUR CODE BELOW THIS LINE:
+// // YOUR CODE BELOW THIS LINE:
 
-console.log(message.toLowerCase().trim())
+// console.log(message.toLowerCase().trim())
 
-const nom = "Thierry";
+// const nom = "Thierry";
 
-// autre exercice ---------------------------------------------------
+// // autre exercice ---------------------------------------------------
 
-let lastIndex = nom[nom.length - 1]
+// let lastIndex = nom[nom.length - 1]
 
-console.log(lastIndex);
+// console.log(lastIndex);
 
-// DON'T TOUCH THIS LINE! (please)
-const word = "skateboard"; //Don't change this line!
+// // DON'T TOUCH THIS LINE! (please)
+// const word = "skateboard"; //Don't change this line!
 
-// YOUR CODE BELOW THIS LINE:
+// // YOUR CODE BELOW THIS LINE:
 
-let slice = word.slice(5,10)
+// let slice = word.slice(5,10)
 
-let facialHair = slice.replace(slice[1],"e")
+// let facialHair = slice.replace(slice[1],"e")
 
-console.log(facialHair)
+// console.log(facialHair)
 
 // exercice sur les nombres ------------------------------------------------------------------
 
@@ -239,6 +239,44 @@ console.log(facialHair)
 
 // ----------------------------------------------------------------------------
 
-for (let i = 25; i >= 0; i -= 5) {
-    console.log(i);
-}
+// for (let i = 10; i <= 1000; i = i*10) {
+//     console.log(i);
+// }
+
+// Boucle tableau ----------------------------------------------------------------------
+
+// const animals = ["lion", "pangolim", "zebra", "dog", "cat", "bird"];
+// console.log(animals.length)
+
+// for (let index = animals.length-1 ; index >= 0; index--) {
+//     console.log(animals[index]) ;
+// }
+
+// Un autre -----------------------------------------------------------------------------
+
+// const users = [
+//     {
+//       firstName: "Vito",
+//       lastName: "Corleone",
+//     },
+//     {
+//       firstName: "William",
+//       lastName: "Wallace",
+//     },
+//     {
+//       firstName: "Harry",
+//       lastName: "Potter",
+//     },
+//     {
+//       firstName: "Amadeus",
+//       lastName: "Mozart",
+//     },
+//     {
+//       firstName: "Barack",
+//       lastName: "Obama",
+//     },
+//   ];
+
+// for (let index = 0; index <= users.length; index++) {
+//     console.log(`My full name is ${users[index].firstName} ${users[index].lastName}`)   
+// }
