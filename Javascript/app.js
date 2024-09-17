@@ -8,7 +8,7 @@
 // /***********Do not change the code below 👇*******/
 
 // console.log("a is " + a);
-// console.log("b is " + b); 
+// console.log("b is " + b);
 
 // // DON'T TOUCH THIS LINE!
 // const message = "    TASTE THE RAINBOW!  "; //DON'T CHANGE THIS LINE PLEASE!
@@ -88,7 +88,7 @@
 
 // const secondNum = parseFloat(prompt("Choisissez un second numéro"))
 
-// const addition = firstNum + secondNum 
+// const addition = firstNum + secondNum
 
 // console.log(firstNum)
 // console.log(secondNum)
@@ -187,7 +187,6 @@
 // planets.push("Saturn")
 // planets.unshift('Mercury')
 
-
 // console.log(planets)
 
 // exercice objets ----------------------------------------------------------------------------------------
@@ -212,7 +211,7 @@
 //     state: "NY",
 //     zipcode: "11206",
 //   };
-  
+
 //   //YOUR CODE GOES DOWN HERE:
 
 // let fullAdress = restaurant.name +", "+ restaurant.address +", "+ restaurant.city +", "+ restaurant.state +", "+restaurant.zipcode;
@@ -278,7 +277,7 @@
 //   ];
 
 // for (let index = 0; index <= users.length; index++) {
-//     console.log(`My full name is ${users[index].firstName} ${users[index].lastName}`)   
+//     console.log(`My full name is ${users[index].firstName} ${users[index].lastName}`)
 // }
 
 // nested loop ---------------------------------------------------------------
@@ -288,9 +287,9 @@
 //     ["Sola", "Irina", "Antonino", "Eli"],
 //     ["John", "Maryna", "Naike", "Fabrice"],
 //   ];
-  
+
 //   // I can use nested loops to do that :
-  
+
 //   for (let i = 0; i < seatingChart.length; i++) {
 //     const row = seatingChart[i]; // I created a variable "row" just to be cleaner in the declaration of the next loop. You could put seatingChart[i].length, it would be the same thing
 //         console.log("Row #"+[i+1])
@@ -307,8 +306,8 @@
 // let tentative = 0
 
 // do {
-//     maxNumber =parseInt(prompt("Veuillez entrer un nombre max :"));  
-// } while (isNaN(maxNumber) || maxNumber <= 0);  
+//     maxNumber =parseInt(prompt("Veuillez entrer un nombre max :"));
+// } while (isNaN(maxNumber) || maxNumber <= 0);
 
 // randomNumber = Math.floor(Math.random()* maxNumber) + 1;
 
@@ -329,5 +328,220 @@
 
 // Exercice forOF / forIn -------------------------------------------------------------------------------------------
 
+// let todos = ["manger", "faire les courses", "rompre avec ma femme"];
+// let choice;
 
+// do {
+//   let choice = prompt(
+//     "Choisissez une commande : \n 1.New \n 2.List \n 3.Delete \n 4.Quit"
+//   ).toLowerCase();
 
+//   if (choice == "new") {
+//     let newTodo = prompt("quel todo ajouter ?");
+//     todos.push(newTodo);
+//     console.log(todos);
+//   } else if (choice == "list") {
+//     let index = 0;
+//     console.log("****************** Todo List *******************");
+//     for (const tod of todos) {
+//       console.log(`${index + 1}: ${tod}`);
+//       index++;
+//     }
+//   } else if (choice == "delete") {
+//     let todoDelete = parseInt(
+//       prompt("quel todo voulez vous supprimer, utilisé son numéro: ")
+//     );
+//     let supp = todoDelete - 1;
+//     if (supp >= 0 && supp < todos.length) {
+//       let toDoDelete = todos.splice(supp, 1);
+//       console.log(`L'élément supprimé est : ${toDoDelete}`);
+//     } else {
+//       console.log("Indice invalide");
+//     }
+//   } else if (choice == "quit") {
+//     break;
+//   }
+// } while (
+//   choice !== "new" &&
+//   choice !== "list" &&
+//   choice !== "delete" &&
+//   choice !== "quit"
+// );
+
+// Exercice sur les fonctions ----------------------------------------
+
+// function rollDice(faces , times) {
+//     for (let index = 1; index <= times; index++) {
+//         const result = Math.floor(Math.random() * faces + 1);
+
+//         console.log(`die ${[index]} : ${result}`)
+
+//     }
+//   }
+
+// console.log(rollDice(6,4))
+
+// next -------------------------------------------------------------------------------------------------------------------
+// caract = prompt("choissisez un caractère")
+// times = parseInt(prompt("combien de fois voulez vous que ça se répète ?"))
+
+// function repeat(caract , times) {
+//   for (let index = 1; index <= times; index++) {
+//     console.log(`${caract}`)
+//   }
+// }
+
+// if (!isNaN(times)) {
+//   console.log(repeat(caract,times))
+// } else {
+//   console.log("ceci n'est pas un nombre")
+// }
+
+// next -----------------------------------------------------------------------------
+
+// firstName = prompt("votre prénom ?")
+// lastName = prompt("votre nom ?")
+
+// function greet(firstName,lastName) {
+//   for (const letter of lastName) {
+//     firstLetter = lastName[0]
+//     console.log(`this is ${firstName} ${firstLetter}`)
+//   }
+// }
+
+// console.log(greet(firstName,lastName))
+
+// next ----------------------------------------------------------------------
+
+// function sum(number1,number2) {
+//   let result = number1+number2
+//   return result
+// }
+
+// number1 = parseInt(1)
+// number2 = parseInt(56)
+
+// const myVar = sum(number1,number2)
+
+// console.log(myVar)
+
+// next -----------------------------------------------------------------
+
+// function logs() {
+//   console.log("Hello");
+//   console.log("World");
+//   return 4;
+//   console.log("Goodbye");
+//   console.log("World");
+// }
+
+// const myVariable = logs();
+
+// console.log(myVariable);
+
+// next -----------------------------------------------------------------
+
+// function isShortWeather(degre) {
+//   if (degre >= 24) {
+//     return true
+//   } else {
+//     return false
+//   }
+// }
+
+// console.log(isShortWeather(5))
+
+// next ---------------------------------------------------------------
+// function lastElement(table) {
+//   if (table.length === 0) {
+//       return null;
+//   } else {
+//       return table[table.length - 1];
+//   }
+// }
+
+// console.log(lastElement([1,4,5,8,9,65]))
+
+// next -------------------------------------------------------
+
+// function capitalize(word) {
+//   if (word.length === 0) {
+//       return word;
+//   }
+//   return word[0].toUpperCase() + word.slice(1);
+// }
+
+// console.log(capitalize("super"))
+
+// next ------------------------------------------------------
+// function surArray(arr) {
+//   let somme = 0;
+
+//   for (let i = 0; i < arr.length; i++) {
+//       somme += arr[i];
+//   }
+//   console.log(somme);
+// }
+
+// const tableau = [1, 2, 3, 4, 5];
+// surArray(tableau);
+
+// next -----------------------------------------------------------------
+
+// const weeks = {
+//   lundi: 1,
+//   mardi: 2,
+//   mercredi: 3,
+//   jeudi: 4,
+//   vendredi: 5,
+//   samedi: 6,
+//   dimanche: 7,
+// };
+
+// function returnDay(choice) {
+//   if (choice < 1 || choice > 7) {
+//     console.log("ça ne désigne pas un jour de la semaine");
+//   } else {
+//     for (const keys in weeks) {
+//       if (choice == weeks[keys]) {
+//         console.log(keys);
+//       }
+//     }
+//   }
+// }
+
+// console.log(returnDay(7));
+
+// Expressions de fonctions -------------------------------------
+
+// const define = function (func, times) {
+//   for (let index = 1; index <= times; index++) {
+//     func();
+
+//   }
+// }
+
+// const rollDie = function () {
+//   const roll = Math.floor(Math.random() * 6 + 1);
+//   console.log(roll);
+// };
+
+// console.log(define(rollDie,4));
+
+// object ----------------------------------
+
+// let user = {
+//   firstName : "Léon",
+//   lastName : "Piernet",
+//   age : 28,
+//   aYearHasPast : function () {
+//     this.age += 1
+//   },
+//   printAge : function () {
+//     console.log(`${user.firstName} ${user.lastName} is ${this.age} years old`)
+//   }
+// }
+
+// user.aYearHasPast();
+// user.aYearHasPast();
+// user.printAge()
