@@ -110,21 +110,21 @@
 // console.log(proportionSuperficiePays("France", 551695)); 
 
 // exo 9 ------------------------------------
-function inverserChaine(input) {
-    // Étape 1 : Supprimer les espaces superflus
-    let trimmedInput = input.trim(); // Enlève les espaces de début et de fin
-    let wordsArray = trimmedInput.split(/\s+/); // Divise par un ou plusieurs espaces
+// function inverserChaine(input) {
+//     // Étape 1 : Supprimer les espaces superflus
+//     let trimmedInput = input.trim(); // Enlève les espaces de début et de fin
+//     let wordsArray = trimmedInput.split(/\s+/); // Divise par un ou plusieurs espaces
 
-    // Étape 2 : Inverser les mots
-    let reversedArray = wordsArray.reverse();
+//     // Étape 2 : Inverser les mots
+//     let reversedArray = wordsArray.reverse();
 
-    // Étape 3 : Joindre les mots avec un espace
-    let reversedString = reversedArray.join(' ');
+//     // Étape 3 : Joindre les mots avec un espace
+//     let reversedString = reversedArray.join(' ');
 
-    return reversedString; // Retourne la chaîne inversée
-}
+//     return reversedString; // Retourne la chaîne inversée
+// }
 
-// Exemple d'utilisation
-let inputString = "  Bonjour   tout le monde   ";
-let result = inverserChaine(inputString);
-console.log(result); // Affiche : "monde le tout Bonjour"
+// // Exemple d'utilisation
+// let inputString = "  Bonjour   tout le monde   ";
+// let result = inverserChaine(inputString);
+// console.log(result); // Affiche : "monde le tout Bonjour"
