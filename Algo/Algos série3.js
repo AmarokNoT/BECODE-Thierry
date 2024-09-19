@@ -38,3 +38,53 @@
 //   ]))
 
 // exo 2 ---------------------------------------
+
+// function reverseOdd(sentence) {
+//   let words = sentence.split(" ");
+
+//   for (let i = 0; i < words.length; i++) {
+//     let word = words[i];
+
+//     if (word.length % 2 !== 0) {
+//       words[i] = word.split("").reverse().join("");
+//     }
+//   }
+
+//   return words.join(" ");
+// }
+
+// console.log(reverseOdd("One two three four"));
+
+// exo 3 ---------------------------------------
+
+// function isSmooth(str) {
+//   let words = str.split(" ");
+
+//   for (let i = 0; i < words.length; i++) {
+//     const lastChar = words[i].toLowerCase().slice(-1);
+//     const firstCharNext = words[i + 1].toLowerCase().charAt(0);
+
+//     if (lastChar !== firstCharNext) {
+//       return false;
+//     } else {
+//       return true;
+//     }
+//   }
+// }
+
+// console.log(isSmooth("Marta appreciated deep perpendicular right trapezoids"));
+
+// exo 4 ----------------------------------------------
+
+// function sevenBoom(array) {
+
+//   let NewArray = array.join("").split("");
+
+//   if (NewArray.includes("7") !== true) {
+//     return console.log("there is no 7 in the array");
+//   } else {
+//     return console.log("BOOM!");
+//   }
+// }
+
+// console.log(sevenBoom([2, 55, 60, 97, 86]));
