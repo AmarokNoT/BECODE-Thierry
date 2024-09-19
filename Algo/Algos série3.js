@@ -110,35 +110,56 @@
 // }
 // exo 5 amélioré -------------------------------------------
 
-function convert(str) {
-  let lowerStr = str.toLowerCase();
+// function convert(str) {
+//   let lowerStr = str.toLowerCase();
 
-  // Extraire le nombre en prenant tous les caractères sauf le dernier
-  let number = parseFloat(lowerStr.slice(0, -2));
+//   // Extraire le nombre en prenant tous les caractères sauf le dernier
+//   let number = parseFloat(lowerStr.slice(0, -2));
 
-  // Extraire l'unité (dernier caractère)
-  let unit = lowerStr.slice(-2);
+//   // Extraire l'unité (dernier caractère)
+//   let unit = lowerStr.slice(-2);
 
-  // Vérifie si l'unité est en degrés Celsius
-  if (unit === "°c") {
-    // Convertir Celsius en Fahrenheit
-    let numberFar = (9 / 5) * number + 32;
-    // Retourner le résultat arrondi avec "°F"
-    return `${Math.round(numberFar)}°F`;
-  }
-  // Vérifie si l'unité est en degrés Fahrenheit
-  else if (unit === "°f") {
-    // Convertir Fahrenheit en Celsius
-    let numberCel = (5 / 9) * (number - 32);
-    // Retourner le résultat arrondi avec "°C"
-    return `${Math.round(numberCel)}°C`;
-  }
-  // Si l'unité est incorrecte ou manquante
-  else {
-    return "Error";
-  }
+//   // Vérifie si l'unité est en degrés Celsius
+//   if (unit === "°c") {
+//     // Convertir Celsius en Fahrenheit
+//     let numberFar = (9 / 5) * number + 32;
+//     // Retourner le résultat arrondi avec "°F"
+//     return `${Math.round(numberFar)}°F`;
+//   }
+//   // Vérifie si l'unité est en degrés Fahrenheit
+//   else if (unit === "°f") {
+//     // Convertir Fahrenheit en Celsius
+//     let numberCel = (5 / 9) * (number - 32);
+//     // Retourner le résultat arrondi avec "°C"
+//     return `${Math.round(numberCel)}°C`;
+//   }
+//   // Si l'unité est incorrecte ou manquante
+//   else {
+//     return "Error";
+//   }
+// }
+
+// console.log(convert("35°C"));
+// console.log(convert("110°F"));
+// console.log(convert("33"));
+
+// exo 6 -----------------------------------------------------------
+
+function findBrokenKeys(str1,str2) {
+    let supposedTyped = str1.split("")
+    let actuallyTyped = str2.split("")
+    const brokenKeys = new Set();
+
+    // console.log(supposedTyped,actuallyTyped,brokenKeys)
+
+    for (let i = 0; i < supposedTyped.length; i++) {
+        if (supposedTyped[i] !== actuallyTyped[i]) {
+            brokenKeys.add(supposedTyped[i]);
+        }
+    }
+    return Array.from(brokenKeys)
 }
 
-console.log(convert("35°C"));
-console.log(convert("110°F"));
-console.log(convert("33"));
+console.log(findBrokenKeys("happy birthday", "hawwy birthday"))
+console.log(findBrokenKeys("starry night", "starrq light"))
+console.log(findBrokenKeys("beethoven", "affthoif5"))
