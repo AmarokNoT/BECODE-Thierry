@@ -22,10 +22,10 @@
 // function getTotalPrice(obj) {
 //     let finalPrice = 0
 //     for (let index = 0; index < obj.length; index++) {
-//         let prices = obj[index].quantity * obj[index].price 
-        
+//         let prices = obj[index].quantity * obj[index].price
+
 //         finalPrice += prices
-        
+
 //     }
 //     return parseFloat(finalPrice)
 // }
@@ -88,3 +88,57 @@
 // }
 
 // console.log(sevenBoom([2, 55, 60, 97, 86]));
+
+// exo 5 ----------------------------------------------
+
+// function convert(str) {
+//   let array = str.toLowerCase().split("");
+//   let number = parseInt(array.slice(0, 2).join(""));
+//   let cOfF = array.slice(2).join("");
+
+//   if (array.includes("c") == true) {
+//     let numberFar = (9 / 5) * number + 32;
+//     let result = parseInt(numberFar);
+//     return `${result}${cOfF}`;
+//   } else if (array.includes("f") == true) {
+//     let numberCel = (5 / 9) * (number - 32);
+//     let result = parseInt(numberCel);
+//     return `${result}${cOfF}`;
+//   } else {
+//     return "error";
+//   }
+// }
+// exo 5 amélioré -------------------------------------------
+
+function convert(str) {
+  let lowerStr = str.toLowerCase();
+
+  // Extraire le nombre en prenant tous les caractères sauf le dernier
+  let number = parseFloat(lowerStr.slice(0, -2));
+
+  // Extraire l'unité (dernier caractère)
+  let unit = lowerStr.slice(-2);
+
+  // Vérifie si l'unité est en degrés Celsius
+  if (unit === "°c") {
+    // Convertir Celsius en Fahrenheit
+    let numberFar = (9 / 5) * number + 32;
+    // Retourner le résultat arrondi avec "°F"
+    return `${Math.round(numberFar)}°F`;
+  }
+  // Vérifie si l'unité est en degrés Fahrenheit
+  else if (unit === "°f") {
+    // Convertir Fahrenheit en Celsius
+    let numberCel = (5 / 9) * (number - 32);
+    // Retourner le résultat arrondi avec "°C"
+    return `${Math.round(numberCel)}°C`;
+  }
+  // Si l'unité est incorrecte ou manquante
+  else {
+    return "Error";
+  }
+}
+
+console.log(convert("35°C"));
+console.log(convert("110°F"));
+console.log(convert("33"));
