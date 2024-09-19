@@ -145,21 +145,21 @@
 
 // exo 6 -----------------------------------------------------------
 
-function findBrokenKeys(str1,str2) {
-    let supposedTyped = str1.split("")
-    let actuallyTyped = str2.split("")
-    const brokenKeys = new Set();
+// function findBrokenKeys(str1, str2) {
+//   let supposedTyped = str1.split("");
+//   let actuallyTyped = str2.split("");
+//   const brokenKeys = new Set();
 
-    // console.log(supposedTyped,actuallyTyped,brokenKeys)
+//   // console.log(supposedTyped,actuallyTyped,brokenKeys)
 
-    for (let i = 0; i < supposedTyped.length; i++) {
-        if (supposedTyped[i] !== actuallyTyped[i]) {
-            brokenKeys.add(supposedTyped[i]);
-        }
-    }
-    return Array.from(brokenKeys)
-}
+//   for (let i = 0; i < supposedTyped.length; i++) {
+//     if (supposedTyped[i] !== actuallyTyped[i]) {
+//       brokenKeys.add(supposedTyped[i]);
+//     }
+//   }
+//   return Array.from(brokenKeys);
+// }
 
-console.log(findBrokenKeys("happy birthday", "hawwy birthday"))
-console.log(findBrokenKeys("starry night", "starrq light"))
-console.log(findBrokenKeys("beethoven", "affthoif5"))
+// console.log(findBrokenKeys("happy birthday", "hawwy birthday"));
+// console.log(findBrokenKeys("starry night", "starrq light"));
+// console.log(findBrokenKeys("beethoven", "affthoif5"));
