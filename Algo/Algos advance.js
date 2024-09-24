@@ -75,3 +75,47 @@
 // console.log(isPalindrome("hello world"))
 
 // exo 3---------------------------------
+// const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+
+// function ceasar(str, num) {
+//     let strArray = str.toLowerCase().trim().split('')
+    
+//     for (let index = 0; index < strArray.length; index++) {
+//         let char = strArray[index];
+//         let charIndex = alphabet.indexOf(char);
+
+//         if (charIndex !== -1) {
+//             let newIndex = (charIndex + num) % 26;
+
+//             if (newIndex < 0) newIndex += 26;
+
+//             strArray[index] = alphabet[newIndex];
+//         }
+//     }
+    
+//     return strArray.join('');
+// }
+
+// console.log(ceasar("zoo keeper", 2 ));
+// console.log(ceasar("bqq mggrgt", -2));
+// console.log(ceasar("My name is Henrique", 3));
+
+// ex 4----------------------------------------------------
+
+// function reverse(sentence) {
+//     let words = sentence.split(" ");
+  
+//     for (let i = 0; i < words.length; i++) {
+//       let word = words[i];
+
+//         words[i] = word.split("").reverse().join("");
+//     }
+  
+//     return words.join(" ");
+//   }
+  
+//   console.log(reverse("This is a string of words"));
+
+// ex 5 --------------------------------------------------------
+
+
