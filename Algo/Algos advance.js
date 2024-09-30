@@ -79,7 +79,7 @@
 
 // function ceasar(str, num) {
 //     let strArray = str.toLowerCase().trim().split('')
-    
+
 //     for (let index = 0; index < strArray.length; index++) {
 //         let char = strArray[index];
 //         let charIndex = alphabet.indexOf(char);
@@ -92,7 +92,7 @@
 //             strArray[index] = alphabet[newIndex];
 //         }
 //     }
-    
+
 //     return strArray.join('');
 // }
 
@@ -104,18 +104,39 @@
 
 // function reverse(sentence) {
 //     let words = sentence.split(" ");
-  
+
 //     for (let i = 0; i < words.length; i++) {
 //       let word = words[i];
 
 //         words[i] = word.split("").reverse().join("");
 //     }
-  
+
 //     return words.join(" ");
 //   }
-  
+
 //   console.log(reverse("This is a string of words"));
 
 // ex 5 --------------------------------------------------------
 
+// function reverseArray(arr) {
+//   let left = 0;
+//   let right = arr.length - 1;
 
+//   while (left < right) {
+//     let temp = arr[left];
+//     arr[left] = arr[right];
+//     arr[right] = temp;
+
+//     left++;
+//     right--;
+//   }
+
+//   return arr;
+// }
+
+// const tableau = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 , "truc"];
+// console.log(reverseArray(tableau));
+
+// ex 6 ------------------------------------------------
+
+// ex 7 ------------------------------------------------
