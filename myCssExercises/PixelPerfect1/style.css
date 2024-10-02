@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+body {
+    background-color: #d74949;
+    font-family: "Roboto", sans-serif;
+  }
+
+section {
+    max-width: 1110px;
+    margin: 0 auto;
+    background-color: #F3F3F3;
+    padding: 100px 50px;
+}
+
+h1 {
+    font-size: 14px;
+    line-height: 16.41px;
+    font-weight: 300;
+    text-align: left;
+}
+
+h2 {
+    letter-spacing: 0.5px;
+    font-weight: 900;
+    text-align: right;
+}
+
+.para, span {
+  font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.para span {
+    color: #8f2727;
+}
+
+img {
+  width: 100%;
+}
+
+.card {
+    width: 200px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+.cover {
+  height: 185px;
+  object-fit: cover;
+}
+
+.description {
+  padding: 20px 20px 30px;
+}
+
+h3{
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.description p {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+
+.social .logo {
+  width: 18px;
+  margin-right: 4px;
+}
+
+.ellipse {
+  width: 54px;
+  height:54px;
+  border-radius: 50%;
+  background-color: #D9D9D9 ;
+  position: absolute;
+  z-index: 456;
+  top: 465px ;
+  left: 600px;
+}
+
+ footer {
+    background-color: #3a3a3a;
+    padding: 30px 0;
+  }
+
+footer p {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+  }
+
+ 
