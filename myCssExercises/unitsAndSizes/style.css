@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+html {font-size:30px}
+
 .blabla {
 background-color: pink;
 max-height: 75vh;
@@ -12,4 +14,6 @@ overflow: hidden;
 
 .i-am-the-boss {
     background-color: cyan;
+    padding: 5px;
+    font-size: 1.2rem;
 }
