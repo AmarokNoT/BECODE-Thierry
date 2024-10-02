@@ -47,3 +47,18 @@ p {
     font-weight: bold;
     color: #ffb30e;
 }
+
+a {
+    margin: 50px ;
+    color: black;
+    background-color: #ffaf03;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+
+}
+a:hover{
+background-color: #fbca62;
+}
