@@ -73,7 +73,7 @@ body {
   width: 198px;
   height: 20px;
   order: 1;
-  border-right: 10px solid black;
+  border-right: px solid black;
   border-left: 5px solid black;
   border-top: 5px solid black;
 }
