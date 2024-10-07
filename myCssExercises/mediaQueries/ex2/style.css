@@ -1,0 +1,59 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Container to center content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    gap: 10px; /* Optional gap between grid items */
+    width: 100%;
+    max-width: 1440px;
+}
+
+/* Divs inside the grid */
+.box {
+    height: 100px;
+}
+
+/* Different background colors for each div */
+.box1 { background-color: #f44336; } /* Red */
+.box2 { background-color: #2196F3; } /* Blue */
+.box3 { background-color: #4CAF50; } /* Green */
+.box4 { background-color: #FFEB3B; } /* Yellow */
+.box5 { background-color: #9C27B0; } /* Purple */
+.box6 { background-color: #FF5722; } /* Orange */
+
+/* Mobile-first: Two columns (1fr each) */
+.grid-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Tablet: Three columns (1fr each) */
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Laptop: Six columns (1fr each) */
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
